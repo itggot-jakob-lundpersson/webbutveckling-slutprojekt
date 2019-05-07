@@ -1,0 +1,34 @@
+
+menu{
+    background-color: black;
+    height: 100vh;
+    width: 60vw;
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    transition: 1s;
+    z-index: 999;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        margin-top: 8vh;
+    }
+}
+
+.shade{
+    left: -100vw;
+    z-index: 99;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    transition: 0.5s;
+}
+
+.activate{
+    left: 0;
+}

@@ -1,7 +1,7 @@
 .navigator{
     main{
-    border-style: solid;
-    height: 100%;
+        border-style: solid;
+        height: 100%;
     }
     article{
         background-color: blue;
@@ -12,6 +12,39 @@
             width: 88%;
             height: 92%;
             background-color: red;
+        }
+    }
+    
+}
+
+.Ledare{
+    main{
+        display: grid;
+        width: 100%;
+        grid-template-rows: 40vh auto;
+        padding-top: 20px;
+        
+        article{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .ledarbox{
+                height: 180px;
+                width: 140px;
+                border-style: solid;
+                margin: 15px 0 0 0;
+            }
+            .ledarbox:nth-child(2n){
+                margin-left: 15px;
+            }
+        }
+        .bigpic{
+            height: 100%;
+            width: 80vw;
+            border-style: solid;
+            justify-self: center;
         }
     }
     

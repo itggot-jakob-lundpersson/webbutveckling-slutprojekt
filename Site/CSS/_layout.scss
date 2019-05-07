@@ -1,5 +1,5 @@
 body{
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -10,29 +10,4 @@ body{
     height: 100%;
 
 }
-}
-
-menu{
-    background-color: black;
-    height: 100vh;
-    width: 70vw;
-    position: fixed;
-    left: -100vw;
-    top: 0;
-    transition: 1s;
-    z-index: 999;
-    margin: 0;
-}
-
-.shade{
-    left: -100vw;
-    z-index: 99;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba($color: #000000, $alpha: 0.7)
-}
-
-.activate{
-    left: 0;
 }
