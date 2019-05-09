@@ -1,21 +1,43 @@
 .navigator{
+
     main{
-        border-style: solid;
         height: 100%;
     }
-    article{
+    article > div{
         background-color: blue;
         display: flex;
         justify-content: center;
-        padding-top: 4%;
-        .linkbox{
-            width: 88%;
-            height: 92%;
-            background-color: red;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        .territorie_link_background{
+            height: 100%;
+            width: 100%;
+
         }
+        .historia_link_background{
+            height: 100%;
+            width: 100%;
+
+        }
+        
+        .ledare_link_background{
+            height: 100%;
+            width: 100%;
+        }
+        
     }
+
     
 }
+
+.linkbox{
+    width: 88%;
+    height: 92%;
+    background-color: red;
+}
+
+
 
 .Ledare{
     main{
@@ -48,4 +70,82 @@
         }
     }
     
+}
+
+
+
+.tider{
+    width: 100%;
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+        article{
+            width: 100%;
+            .historiabild{
+                border-style: solid;
+                height: 80vh;
+                width: 100%;
+            }
+            
+            .forord{
+                border-style: solid;
+                height: 60vh;
+                width: 100%;
+            }
+
+            .begynnelsen{
+                border-style: solid;
+                height: 70vh;
+                width: 100%;
+            }
+
+            .medeltiden{
+                border-style: solid;
+                height: 60vh;
+                width: 100%;
+            }
+
+            .modern_tid{
+                border-style: solid;
+                height: 60vh;
+                width: 100%;
+            }
+
+
+        }
+    }
+}
+
+.territorie{
+    width: 100%;
+    height: auto;
+    main{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+
+        article{
+            height: auto;
+            width: 100%;
+            .karta{
+                width: 100%;
+                border-style: solid;
+                height: 85vh;
+            }
+        }
+        article{
+            width: 100%;
+            .stader{
+                width: 100%;
+                border-style: solid;
+                height: 100vh;
+            }
+        }
+    }
+
 }

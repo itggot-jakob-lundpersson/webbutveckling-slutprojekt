@@ -26,17 +26,28 @@ header {
     margin-right: 20%; }
 
 .navigator main {
-  border-style: solid;
   height: 100%; }
-.navigator article {
+.navigator article > div {
   background-color: blue;
   display: flex;
   justify-content: center;
-  padding-top: 4%; }
-  .navigator article .linkbox {
-    width: 88%;
-    height: 92%;
-    background-color: red; }
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+  .navigator article > div .territorie_link_background {
+    height: 100%;
+    width: 100%; }
+  .navigator article > div .historia_link_background {
+    height: 100%;
+    width: 100%; }
+  .navigator article > div .ledare_link_background {
+    height: 100%;
+    width: 100%; }
+
+.linkbox {
+  width: 88%;
+  height: 92%;
+  background-color: red; }
 
 .Ledare main {
   display: grid;
@@ -60,6 +71,67 @@ header {
     width: 80vw;
     border-style: solid;
     justify-self: center; }
+
+.tider {
+  width: 100%; }
+  .tider main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; }
+    .tider main article {
+      width: 100%; }
+      .tider main article .historiabild {
+        border-style: solid;
+        height: 80vh;
+        width: 100%; }
+      .tider main article .forord {
+        border-style: solid;
+        height: 60vh;
+        width: 100%; }
+      .tider main article .begynnelsen {
+        border-style: solid;
+        height: 70vh;
+        width: 100%; }
+      .tider main article .medeltiden {
+        border-style: solid;
+        height: 60vh;
+        width: 100%; }
+      .tider main article .modern_tid {
+        border-style: solid;
+        height: 60vh;
+        width: 100%; }
+
+.territorie {
+  width: 100%;
+  height: auto; }
+  .territorie main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto; }
+    .territorie main article {
+      height: auto;
+      width: 100%; }
+      .territorie main article .karta {
+        width: 100%;
+        border-style: solid;
+        height: 85vh; }
+    .territorie main article {
+      width: 100%; }
+      .territorie main article .stader {
+        width: 100%;
+        border-style: solid;
+        height: 100vh; }
+
+.text_background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: -100;
+  left: 0; }
 
 menu {
   background-color: black;
@@ -90,3 +162,34 @@ menu {
 
 .activate {
   left: 0; }
+
+.bigpic .intropic {
+  background-image: url("../IMG/duck.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 150%; }
+
+main article .historia_link_background {
+  background-image: url("../IMG/duck.jpg");
+  background-size: 100%; }
+  main article .historia_link_background .linkbox .historia_link {
+    background-image: url("../IMG/duck.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 200%; }
+main article .territorie_link_background {
+  background-image: url("../IMG/duck.jpg");
+  background-size: 100%; }
+  main article .territorie_link_background .linkbox .territorie_link {
+    background-image: url("../IMG/duck.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 200%; }
+main article .ledare_link_background {
+  background-image: url("../IMG/duck.jpg");
+  background-size: 100%; }
+  main article .ledare_link_background .linkbox .ledare_link {
+    background-image: url("../IMG/duck.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 200%; }

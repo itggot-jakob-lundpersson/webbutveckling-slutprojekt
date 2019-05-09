@@ -1,0 +1,56 @@
+.bigpic{
+    .intropic{
+        background-image: url("../IMG/duck.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: 150%;
+    }
+
+}
+
+main{
+    
+    article{
+        .historia_link_background{
+            background-image: url("../IMG/duck.jpg");
+            background-size: 100%;
+            .linkbox{
+                .historia_link{
+                    background-image: url("../IMG/duck.jpg");
+                    width: 100%;
+                    height: 100%;
+                    background-size: 200%;
+
+                }
+            }
+        }
+          .territorie_link_background{
+            background-image: url("../IMG/duck.jpg");
+            background-size: 100%;
+            .linkbox{
+                .territorie_link{
+                    background-image: url("../IMG/duck.jpg");
+                    width: 100%;
+                    height: 100%;
+                    background-size: 200%;
+        }
+    }
+}
+
+          .ledare_link_background{
+            background-image: url("../IMG/duck.jpg");
+            background-size: 100%;
+            .linkbox{
+                .ledare_link{
+                    background-image: url("../IMG/duck.jpg");
+                    width: 100%;
+                    height: 100%;
+                    background-size: 200%;
+        }
+    }
+}
+
+        
+    }
+    
+}
