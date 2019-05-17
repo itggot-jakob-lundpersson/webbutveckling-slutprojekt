@@ -1,51 +1,130 @@
 body {
   min-height: 100vh;
-  margin: 0; }
+  margin: 0;
+  width: 100vw; }
 
-.wrapper main {
-  display: grid;
-  grid-template-rows: 50vh 25vh 25vh 25vh;
-  height: 100%; }
+.wrapper {
+  width: 100vw; }
+  .wrapper main {
+    display: grid;
+    grid-template-rows: 50vh 25vh 25vh 25vh;
+    height: 100%; }
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    width: 100vw; }
+    .wrapper .navigator main {
+      display: grid;
+      grid-template-rows: 80vh;
+      grid-template-columns: 0vw 33.3vw 33.3vw 33.3vw;
+      height: 100%; } }
+.desktop {
+  height: 0;
+  visibility: hidden;
+  margin: 0; }
 
 header {
   background-color: aquamarine;
   height: 15vh;
-  width: 100%;
+  width: 100vw;
   display: grid;
   justify-content: center;
-  grid-template-columns: 20% 80%;
+  text-align: center;
+  grid-template-columns: 20vw 80vw;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 20; }
   header .material-icons {
     font-size: 50px;
     align-self: center;
     margin-left: 25px; }
   header h3 {
-    font-size: 2rem;
-    justify-self: center;
-    margin-right: 20%; }
+    font-size: 2em;
+    align-self: center;
+    margin: 0; }
 
-.navigator main {
-  height: 100%; }
-.navigator article > div {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%; }
-  .navigator article > div a {
-    text-decoration: none; }
-  .navigator article > div .territorie_link_background {
+.bigpic2 {
+  visibility: hidden;
+  height: 0; }
+
+.thicc {
+  font-weight: bold; }
+
+.navigator .end {
+  margin-top: 0; }
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 15vh;
+    visibility: visible;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 60% 10% 10% 10% 10%;
+    justify-content: center;
+    align-items: center;
+    position: sticky !important;
+    top: 0; }
+    header a {
+      margin: 5px;
+      font-size: 1.4rem;
+      justify-self: center;
+      text-decoration: underline;
+      padding: 0;
+      border: 0; }
+    header a:visited {
+      color: black; }
+    header h3 {
+      margin: 10px;
+      justify-self: center;
+      padding: 0; }
+    header a:hover {
+      font-size: 1.5rem;
+      transition: 0.2s;
+      cursor: pointer; }
+
+  .mobile {
+    height: 0;
+    visibility: hidden;
+    margin: 0;
+    position: absolute; }
+
+  .desktop {
+    height: 15vh;
+    visibility: visible;
+    display: flex; }
+
+  .title {
+    margin-right: 25%;
+    font-size: 2em; }
+
+  .bigpic2 {
+    visibility: visible;
+    height: 50vh;
+    width: 100%; } }
+.navigator {
+  width: 100vw; }
+  .navigator main {
+    height: 100%; }
+  .navigator article > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%; }
-  .navigator article > div .historia_link_background {
-    height: 100%;
-    width: 100%; }
-  .navigator article > div .ledare_link_background {
-    height: 100%;
-    width: 100%; }
+    .navigator article > div .desktop {
+      position: absolute; }
+    .navigator article > div a {
+      text-decoration: none; }
+    .navigator article > div .territorie_link_background {
+      height: 100%;
+      width: 100%; }
+    .navigator article > div .historia_link_background {
+      height: 100%;
+      width: 100%; }
+    .navigator article > div .ledare_link_background {
+      height: 100%;
+      width: 100%; }
 
 .linkbox {
   width: 88%;
@@ -60,7 +139,11 @@ header {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
+    .Ledare main article h2 {
+      width: 100%;
+      margin-top: 15px; }
     .Ledare main article .ledarbox {
       height: 180px;
       width: 145px;
@@ -71,7 +154,7 @@ header {
       .Ledare main article .ledarbox h3 {
         margin: 0; }
     .Ledare main article .ledarbox:nth-child(2n) {
-      margin-left: 15px; }
+      margin-right: 5px; }
   .Ledare main .bigpic {
     height: 100%;
     width: 80vw;
@@ -88,29 +171,34 @@ header {
     .tider main article {
       width: 100%; }
       .tider main article .historiabild {
-        border-style: solid;
         height: 80vh;
         width: 100%; }
       .tider main article .forord {
-        border-style: solid;
         height: auto;
         width: 100%; }
       .tider main article .begynnelse {
-        border-style: solid;
         height: auto;
         width: 100%; }
       .tider main article .forntiden {
-        border-style: solid;
         height: auto;
         width: 100%; }
       .tider main article .medeltiden {
-        border-style: solid;
         height: auto;
         width: 100%; }
       .tider main article .modern_tid {
-        border-style: solid;
         height: auto;
         width: 100%; }
+
+.end {
+  margin-bottom: 0; }
+
+.intropic {
+  text-align: center; }
+  .intropic h3 {
+    margin: 0;
+    font-size: 3em;
+    padding-top: 10vh;
+    color: white; }
 
 .territorie {
   width: 100%;
@@ -126,15 +214,108 @@ header {
       width: 100%; }
       .territorie main article .karta {
         width: 100%;
-        border-style: solid;
         height: 85vh; }
     .territorie main article {
       width: 100%; }
       .territorie main article .stader {
         width: 100%;
-        border-style: solid;
         height: 100vh; }
 
+@media screen and (min-width: 700px) {
+  .navigator {
+    width: 100vw; }
+    .navigator article > div {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+    .navigator article > div > a > div > div {
+      height: 0;
+      visibility: hidden; }
+    .navigator article > div > a {
+      height: 400px !important;
+      margin-bottom: 75px; }
+    .navigator article > div > h3 {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      align-items: center;
+      justify-content: center; }
+    .navigator main .bigpic {
+      visibility: hidden;
+      height: 0; }
+
+  .Ledare main {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-rows: 45vh auto;
+    height: auto;
+    justify-content: center;
+    align-items: center; }
+    .Ledare main article {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      text-align: left !important;
+      margin: 5px;
+      margin-left: 35px; }
+      .Ledare main article h2 {
+        margin: 0; }
+      .Ledare main article .ledarbox {
+        padding: 5px;
+        margin: 0; }
+        .Ledare main article .ledarbox h3 {
+          margin: 0px; }
+      .Ledare main article .ledarbox:nth-child(2n) {
+        margin-left: 0px; }
+    .Ledare main article:nth-child(2n) {
+      grid-row: span 2;
+      margin-right: 60px;
+      width: 70%; }
+    .Ledare main .bigpic {
+      justify-self: flex-start;
+      margin-left: 40px;
+      width: 600px !important;
+      height: 240px !important; }
+
+  .tider main {
+    height: auto;
+    display: grid;
+    grid-template-rows: 60vh auto auto;
+    grid-template-columns: 25vw 25vw 25vw 25vw; }
+    .tider main article {
+      align-items: flex-start; }
+      .tider main article div {
+        margin: 0; }
+        .tider main article div .text_background {
+          top: -5vh !important;
+          height: 15vh;
+          margin: 0; }
+    .tider main .modern {
+      grid-column: span 1; }
+    .tider main .banner {
+      grid-column: span 4; }
+
+  .territorie main {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100%; }
+    .territorie main .stader {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      height: 100vh !important; }
+      .territorie main .stader h2 {
+        width: 35%;
+        margin: 0;
+        padding: 0; }
+    .territorie main .karta {
+      height: 100vh !important; } }
 menu {
   background-color: black;
   height: 100vh;
@@ -166,46 +347,54 @@ menu {
   left: 0; }
 
 .bigpic .intropic {
-  background-image: url("../IMG/duck.jpg");
+  background-image: url("../IMG/Mobil banner 1.png");
   width: 100%;
   height: 100%;
-  background-size: 150%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 .bigpic .ledare_banner {
-  background-image: url("../IMG/duck.jpg");
+  background-image: url("../IMG/Kattknug.png");
   height: 100%;
   width: 100%;
-  background-size: 150%; }
+  background-size: 100%; }
 
-main article .ledarbox > div {
-  background-image: url("../IMG/duck.jpg");
-  background-size: 250%;
+.modern .ledarbox > div {
+  background-image: url("../IMG/Mobil_president.png");
+  background-size: 100%;
   height: 80%;
   width: 100%; }
+
+.gammal .ledarbox > div {
+  background-image: url("../IMG/Mobil_katt_artur.png");
+  background-size: 100%;
+  height: 80%;
+  width: 100%; }
+
 main article .historia_link_background {
-  background-image: url("../IMG/duck.jpg");
+  background-image: url("../IMG/Background_history_mobile.png");
   background-size: 100%; }
   main article .historia_link_background .linkbox .historia_link {
-    background-image: url("../IMG/duck.jpg");
+    background-image: url("../IMG/Cat_history_mobile.png");
     width: 100%;
     height: 100%;
-    background-size: 200%; }
+    background-size: 100%; }
 main article .territorie_link_background {
-  background-image: url("../IMG/duck.jpg");
+  background-image: url("../IMG/Mobile_territorie_background.png");
   background-size: 100%; }
   main article .territorie_link_background .linkbox .territorie_link {
-    background-image: url("../IMG/duck.jpg");
+    background-image: url("../IMG/Caste_cat_mobile.png");
     width: 100%;
     height: 100%;
-    background-size: 200%; }
+    background-size: 100%; }
 main article .ledare_link_background {
-  background-image: url("../IMG/duck.jpg");
+  background-image: url("../IMG/ledare_backgrund_mobil.png");
   background-size: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
   main article .ledare_link_background .linkbox .ledare_link {
-    background-image: url("../IMG/duck.jpg");
+    background-image: url("../IMG/Mobil_ledare.png");
     width: 100%;
     height: 100%;
-    background-size: 200%; }
+    background-size: 100%; }
 
 .linkbox > div {
   display: flex; }
@@ -226,7 +415,7 @@ main article .ledare_link_background {
     align-self: center;
     text-decoration: none;
     color: white;
-    font-size: 2.8rem !important; }
+    font-size: 2rem !important; }
 
 .tider main article > div {
   background-image: url("../IMG/duck.jpg"); }

@@ -13,10 +13,11 @@
 
 <body>
     
-    
+
+
 
     <div class = wrapper>
-<menu>
+<menu .mobile>
 <a href = "index.html"> Hem </a>
 <a href = "page1.html"> Ledarskap </a>
 <a href = "page2.html"> Historia </a>
@@ -25,19 +26,25 @@
 </menu>
 <div class = "shade" onclick = "doStuff()"> </div>
 
-            <header>
-        
-        
-        <i class="material-icons" onclick = "doStuff()">
-                menu
-        </i>
-        <h3> Historia </h3>
-        
+            <header class = mobile>
+    
+    
+    <i class="material-icons" onclick = "doStuff()">
+        menu
+    </i>
+    <h3> Historia </h3>
+    
 </header>
+
+<header class = desktop>
+    
+        <h3 href = "index.html" class = "title"> Katternas rike</h3> <a href = "index.html"> Hem </a> <a href = "page1.html"> Ledarskap </a> <a href = "page2.html"  class = "thicc"> Historia </a> <a href = "page3.html"> Territorie </a> 
+        
+    </header>
 
 <div class = tider>
         <main>
-                <article>
+                <article class = banner>
                         <div class = historiabild>
                                 <div class = text_background>
                                                 
@@ -86,12 +93,12 @@
                         </div>
                 </article>
                 
-                <article>
+                <article class = modern>
                         <div class = modern_tid >
                                 <div class = text_background>
                                         <h3>Modern tid</h3>
                                 </div>
-                                <h3> Repellat saepe dolorem alias ex consectetur fugit quibusdam. Perferendis modi sed tenetur ut iste et neque ullam. In et ullam harum veritatis minus qui beatae veniam. Quas beatae dolores voluptatem quos. Quia officia inventore ut dolore totam voluptas.…
+                                <h3 class = end> Repellat saepe dolorem alias ex consectetur fugit quibusdam. Perferendis modi sed tenetur ut iste et neque ullam. In et ullam harum veritatis minus qui beatae veniam.
                                         </h3>
                         </div>
                 </article>

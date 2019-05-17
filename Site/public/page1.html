@@ -13,10 +13,11 @@
 
 <body>
     
-    
+
+
 
     <div class = wrapper>
-<menu>
+<menu .mobile>
 <a href = "index.html"> Hem </a>
 <a href = "page1.html"> Ledarskap </a>
 <a href = "page2.html"> Historia </a>
@@ -25,7 +26,7 @@
 </menu>
 <div class = "shade" onclick = "doStuff()"> </div>
 
-            <header>
+            <header class = mobile>
     
     
     <i class="material-icons" onclick = "doStuff()">
@@ -35,13 +36,20 @@
     
 </header>
 
+<header class = desktop>
+    
+        <h3 href = "index.html" class = "title"> Katternas rike</h3> <a href = "index.html"> Hem </a> <a href = "page1.html"  class = "thicc"> Ledarskap </a> <a href = "page2.html"> Historia </a> <a href = "page3.html"> Territorie </a> 
+        
+    </header>
+
 <div class = "Ledare">
     <main>
         <div class = bigpic>
             <div class = ledare_banner> </div>
         </div>
         
-        <article>
+        <article class = modern>
+        <h2> Moderna ledare </h2>
             <div class = "ledarbox">
                 <h3> Karl Von Kattsburg</h3>
                 <div class = ledare1> </div>
@@ -51,7 +59,22 @@
                     <h3> Karl Von Kattsburg</h3>
                     <div class = ledare2> </div>
             </div>
+
+             <div class = "ledarbox">
+                    <h3> Karl Von Kattsburg</h3>
+                    <div class = ledare2> </div>
+            </div>
+
+             <div class = "ledarbox">
+                    <h3> Karl Von Kattsburg</h3>
+                    <div class = ledare2> </div>
+            </div>
             
+            </article>
+
+
+            <article class = gammal>
+            <h2> Gamla ledare </h2>
             <div class = "ledarbox">
                     <h3> Karl Von Kattsburg</h3>
                     <div class = ledare3> </div>
@@ -71,6 +94,7 @@
                     <h3> Karl Von Kattsburg</h3>
                     <div class = ledare6> </div>
             </div>
+            
         </article>
     </main>
 </div>

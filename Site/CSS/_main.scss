@@ -1,15 +1,18 @@
 .navigator{
+    width: 100vw;
 
     main{
         height: 100%;
     }
     article > div{
-        background-color: blue;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
+        .desktop{
+            position: absolute;
+        }
         a{
             text-decoration: none;
         }
@@ -54,6 +57,12 @@
             width: 100%;
             flex-wrap: wrap;
             justify-content: center;
+            text-align: center;
+            h2{
+                width: 100%;
+                margin-top: 15px;
+
+            }
             
             .ledarbox{
                 height: 180px;
@@ -71,7 +80,7 @@
                 }
             }
             .ledarbox:nth-child(2n){
-                margin-left: 15px;
+                margin-right: 5px;
             }
         }
         .bigpic{
@@ -97,42 +106,55 @@
         article{
             width: 100%;
             .historiabild{
-                border-style: solid;
+                //border-style: solid;
                 height: 80vh;
                 width: 100%;
             }
             
             .forord{
-                border-style: solid;
+                //border-style: solid;
                 height: auto;
                 width: 100%;
             }
 
             .begynnelse{
-                border-style: solid;
+                //border-style: solid;
                 height: auto;
                 width: 100%;
             }
             .forntiden{
-                border-style: solid;
+                //border-style: solid;
                 height: auto;
                 width: 100%;  
             }
 
             .medeltiden{
-                border-style: solid;
+                //border-style: solid;
                 height: auto;
                 width: 100%;
             }
 
             .modern_tid{
-                border-style: solid;
+                //border-style: solid;
                 height: auto;
                 width: 100%;
             }
 
 
         }
+    }
+}
+.end{
+    margin-bottom: 0;
+}
+
+.intropic{
+    text-align: center;
+    h3{
+        margin: 0;
+        font-size: 3em;
+        padding-top: 10vh;
+        color: white;
     }
 }
 
@@ -151,7 +173,7 @@
             width: 100%;
             .karta{
                 width: 100%;
-                border-style: solid;
+                //border-style: solid;
                 height: 85vh;
             }
         }
@@ -159,10 +181,166 @@
             width: 100%;
             .stader{
                 width: 100%;
-                border-style: solid;
+                //border-style: solid;
                 height: 100vh;
             }
         }
     }
 
 }
+
+
+@media screen and (min-width: 700px) {
+    
+
+    .navigator{
+        width: 100vw;
+    article > div{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    article > div > a > div > div{
+        height: 0;
+        visibility: hidden;
+    }
+    article > div > a{
+        height: 400px !important;
+        margin-bottom: 75px;
+    }
+    article > div > h3{
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+       main{
+
+           .bigpic{
+               visibility: hidden;
+               height: 0;
+               
+           }
+       }
+   }
+
+.Ledare{
+    main{
+        display: grid;
+        grid-template-columns: 60vw 40vw;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        grid-template-rows: 45vh auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            text-align: left !important;
+            margin: 5px;
+            margin-left: 35px;
+
+            h2{
+                margin: 0;
+            }
+           
+
+            .ledarbox{
+                padding: 5px;
+                margin: 0;
+                
+                h3{
+                    margin: 0px;
+                }
+            }
+
+            .ledarbox:nth-child(2n){
+                margin-left: 0px;
+            }
+
+        }
+
+        article:nth-child(2n){
+            grid-row: span 2;
+            margin-right: 60px;
+            width: 70%;
+
+
+        }
+
+        .bigpic{
+            justify-self: flex-start;
+            margin-left: 40px;
+            width: 600px !important;
+            height: 240px !important;
+            
+            }
+        }
+    }
+
+
+    .tider{
+        main{
+            height: auto;
+            display: grid;
+            grid-template-rows: 60vh auto auto;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+            article{
+                align-items: flex-start;
+                div{
+                    margin: 0;
+                    
+                    .text_background{
+                        top: -5vh !important;
+                        height: 15vh;
+                        margin: 0;
+                        
+                    }
+                }
+            }
+            .modern{
+                grid-column: span 1;
+            }
+            .banner{
+                grid-column: span 4;
+            }
+        }
+    }
+
+    .territorie{
+        main{
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+            grid-template-rows: 100%;
+            .stader{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                height: 100vh !important;
+                h2{
+                    width: 35%;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+            }
+            .karta{
+                height: 100vh !important;
+            }
+        }
+
+    }
+  }
+
