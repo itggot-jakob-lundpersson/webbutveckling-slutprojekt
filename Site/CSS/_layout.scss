@@ -1,11 +1,11 @@
 body{
     min-height: 100vh;
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .wrapper{
-    width: 100vw;
+    width: 100%;
     main{
     display: grid;
     grid-template-rows: 50vh 25vh 25vh 25vh;
@@ -16,15 +16,15 @@ body{
 }
 
 
-@media screen and (min-width: 700px) {
+@media only screen and (min-width: 1224px) {
     
     .wrapper{
-        width: 100vw;
+        width: 100%;
         .navigator{
         main{
         display: grid;
         grid-template-rows: 80vh;
-        grid-template-columns: 0vw 33.3vw 33.3vw 33.3vw;
+        grid-template-columns: 0% 33.3% 33.3% 33.3%;
         height: 100%;
         
     }

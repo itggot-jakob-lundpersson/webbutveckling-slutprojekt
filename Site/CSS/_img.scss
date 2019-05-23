@@ -3,21 +3,21 @@
         background-image: url("../IMG/Mobil\ banner\ 1.png");
         width: 100%;
         height: 100%;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .ledare_banner{
             background-image: url("../IMG/Kattknug.png");
             height: 100%;
             width: 100%;
-            background-size: 100%;
+            background-size: cover;
         }
 }
 
 .modern{
     .ledarbox > div{
         background-image: url("../IMG/Mobil_president.png");
-        background-size: 100%;
+        background-size: cover;
         height: 80%;
         width: 100%;
     }
@@ -26,7 +26,7 @@
 .gammal{
     .ledarbox > div{
         background-image: url("../IMG/Mobil_katt_artur.png");
-        background-size: 100%;
+        background-size: cover;
         height: 80%;
         width: 100%;
     }
@@ -38,13 +38,13 @@ main{
 
         .historia_link_background{
             background-image: url("../IMG/Background_history_mobile.png");
-            background-size: 100%;
+            background-size: cover;
             .linkbox{
                 .historia_link{
                     background-image: url("../IMG/Cat_history_mobile.png");
                     width: 100%;
                     height: 100%;
-                    background-size: 100%;
+                    background-size: cover;
                     
 
                 }
@@ -52,20 +52,20 @@ main{
         }
           .territorie_link_background{
             background-image: url("../IMG/Mobile_territorie_background.png");
-            background-size: 100%;
+            background-size: cover;
             .linkbox{
                 .territorie_link{
                     background-image: url("../IMG/Caste_cat_mobile.png");
                     width: 100%;
                     height: 100%;
-                    background-size: 100%;
+                    background-size: cover;
         }
     }
 }
 
           .ledare_link_background{
             background-image: url("../IMG/ledare_backgrund_mobil.png");
-            background-size: 100%;
+            background-size: cover;
             background-color: rgba($color: #000000, $alpha: 0.5);
             .linkbox{
                 
@@ -73,7 +73,7 @@ main{
                     background-image: url("../IMG/Mobil_ledare.png");
                     width: 100%;
                     height: 100%;
-                    background-size: 100%;
+                    background-size: cover;
                     
         }
     }
@@ -117,8 +117,15 @@ main{
 
 .tider{
     main{
+        .historiabild{
+            background-image: url("../IMG/Lutzen_mobile.png") !important;
+            background-size: cover;
+        }
+
+        
         article > div{
-            background-image: url("../IMG/duck.jpg");
+            background-image: url("../IMG/Lutzen_mobile2.png");
+            background-size: cover;
             .text_background{
                 height: 80px;
                 align-self: flex-start;
@@ -164,5 +171,56 @@ main{
                 color: azure;
             }
         }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .bigpic2{
+    background-image: url("../IMG/Catpoleon_banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+.territorie_link{
+    background-image: url("../IMG/Bakgrund_territorie_desktop.png") !important;
+    background-size: cover;
+}
+
+.historia_link{
+    background-image: url("../IMG/Cat_history_mobile.png") !important;
+    background-size: cover;
+}
+
+.ledare_link{
+    background-image: url("../IMG/Kattknug_desktop.png") !important;
+    background-size: cover;
+}
+
+.tider{
+    main{
+        article{
+            
+                .historiabild{
+                background-image: url("../IMG/Catopoleon2_2_historia.png") !important;
+                background-size: cover;
+            }
+            
+        }
+    }
+}
+
+    .karta{
+        background-image: url("../IMG/Map.png") !important;
+        background-size: cover;
+    }
+
+    .stader{
+        background-image: url("../IMG/Karta.png") !important;
+        background-size: cover;
     }
 }

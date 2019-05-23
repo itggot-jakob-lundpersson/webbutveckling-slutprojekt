@@ -1,22 +1,22 @@
 body {
   min-height: 100vh;
   margin: 0;
-  width: 100vw; }
+  width: 100%; }
 
 .wrapper {
-  width: 100vw; }
+  width: 100%; }
   .wrapper main {
     display: grid;
     grid-template-rows: 50vh 25vh 25vh 25vh;
     height: 100%; }
 
-@media screen and (min-width: 700px) {
+@media only screen and (min-width: 1224px) {
   .wrapper {
-    width: 100vw; }
+    width: 100%; }
     .wrapper .navigator main {
       display: grid;
       grid-template-rows: 80vh;
-      grid-template-columns: 0vw 33.3vw 33.3vw 33.3vw;
+      grid-template-columns: 0% 33.3% 33.3% 33.3%;
       height: 100%; } }
 .desktop {
   height: 0;
@@ -26,7 +26,7 @@ body {
 header {
   background-color: aquamarine;
   height: 15vh;
-  width: 100vw;
+  width: 100%;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -54,11 +54,11 @@ header {
 .navigator .end {
   margin-top: 0; }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 1224px) {
   header {
     height: 15vh;
     visibility: visible;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 60% 10% 10% 10% 10%;
     justify-content: center;
@@ -66,7 +66,8 @@ header {
     position: sticky !important;
     top: 0; }
     header a {
-      margin: 5px;
+      font-family: 'ZCOOL XiaoWei', serif;
+      margin-left: 3%;
       font-size: 1.4rem;
       justify-self: center;
       text-decoration: underline;
@@ -103,7 +104,7 @@ header {
     height: 50vh;
     width: 100%; } }
 .navigator {
-  width: 100vw; }
+  width: 100%; }
   .navigator main {
     height: 100%; }
   .navigator article > div {
@@ -221,9 +222,9 @@ header {
         width: 100%;
         height: 100vh; }
 
-@media screen and (min-width: 700px) {
+@media only screen and (min-width: 1224px) {
   .navigator {
-    width: 100vw; }
+    width: 100%; }
     .navigator article > div {
       height: 100vh;
       display: flex;
@@ -247,7 +248,7 @@ header {
 
   .Ledare main {
     display: grid;
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 60% 40%;
     grid-column-gap: 0;
     grid-row-gap: 0;
     grid-template-rows: 45vh auto;
@@ -285,7 +286,7 @@ header {
     height: auto;
     display: grid;
     grid-template-rows: 60vh auto auto;
-    grid-template-columns: 25vw 25vw 25vw 25vw; }
+    grid-template-columns: 25% 25% 25% 25%; }
     .tider main article {
       align-items: flex-start; }
       .tider main article div {
@@ -301,7 +302,7 @@ header {
 
   .territorie main {
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100%; }
     .territorie main .stader {
       display: flex;
@@ -350,51 +351,51 @@ menu {
   background-image: url("../IMG/Mobil banner 1.png");
   width: 100%;
   height: 100%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat; }
 .bigpic .ledare_banner {
   background-image: url("../IMG/Kattknug.png");
   height: 100%;
   width: 100%;
-  background-size: 100%; }
+  background-size: cover; }
 
 .modern .ledarbox > div {
   background-image: url("../IMG/Mobil_president.png");
-  background-size: 100%;
+  background-size: cover;
   height: 80%;
   width: 100%; }
 
 .gammal .ledarbox > div {
   background-image: url("../IMG/Mobil_katt_artur.png");
-  background-size: 100%;
+  background-size: cover;
   height: 80%;
   width: 100%; }
 
 main article .historia_link_background {
   background-image: url("../IMG/Background_history_mobile.png");
-  background-size: 100%; }
+  background-size: cover; }
   main article .historia_link_background .linkbox .historia_link {
     background-image: url("../IMG/Cat_history_mobile.png");
     width: 100%;
     height: 100%;
-    background-size: 100%; }
+    background-size: cover; }
 main article .territorie_link_background {
   background-image: url("../IMG/Mobile_territorie_background.png");
-  background-size: 100%; }
+  background-size: cover; }
   main article .territorie_link_background .linkbox .territorie_link {
     background-image: url("../IMG/Caste_cat_mobile.png");
     width: 100%;
     height: 100%;
-    background-size: 100%; }
+    background-size: cover; }
 main article .ledare_link_background {
   background-image: url("../IMG/ledare_backgrund_mobil.png");
-  background-size: 100%;
+  background-size: cover;
   background-color: rgba(0, 0, 0, 0.5); }
   main article .ledare_link_background .linkbox .ledare_link {
     background-image: url("../IMG/Mobil_ledare.png");
     width: 100%;
     height: 100%;
-    background-size: 100%; }
+    background-size: cover; }
 
 .linkbox > div {
   display: flex; }
@@ -417,8 +418,12 @@ main article .ledare_link_background {
     color: white;
     font-size: 2rem !important; }
 
+.tider main .historiabild {
+  background-image: url("../IMG/Lutzen_mobile.png") !important;
+  background-size: cover; }
 .tider main article > div {
-  background-image: url("../IMG/duck.jpg"); }
+  background-image: url("../IMG/Lutzen_mobile2.png");
+  background-size: cover; }
   .tider main article > div .text_background {
     height: 80px;
     align-self: flex-start;
@@ -447,3 +452,34 @@ main article .ledare_link_background {
     margin: 20px auto 20px auto;
     padding-top: 50px;
     color: azure; }
+
+@media screen and (min-width: 1000px) {
+  .bigpic2 {
+    background-image: url("../IMG/Catpoleon_banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0; }
+
+  .territorie_link {
+    background-image: url("../IMG/Bakgrund_territorie_desktop.png") !important;
+    background-size: cover; }
+
+  .historia_link {
+    background-image: url("../IMG/Cat_history_mobile.png") !important;
+    background-size: cover; }
+
+  .ledare_link {
+    background-image: url("../IMG/Kattknug_desktop.png") !important;
+    background-size: cover; }
+
+  .tider main article .historiabild {
+    background-image: url("../IMG/Catopoleon2_2_historia.png") !important;
+    background-size: cover; }
+
+  .karta {
+    background-image: url("../IMG/Map.png") !important;
+    background-size: cover; }
+
+  .stader {
+    background-image: url("../IMG/Karta.png") !important;
+    background-size: cover; } }
