@@ -1,13 +1,13 @@
 .bigpic{
     .intropic{
-        background-image: url("../IMG/Mobil\ banner\ 1.png");
+        background-image: url("../IMG/Mobil\ banner\ 1.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
     }
     .ledare_banner{
-            background-image: url("../IMG/Kattknug.png");
+            background-image: url("../IMG/Kattknug.jpg");
             height: 100%;
             width: 100%;
             background-size: cover;
@@ -16,7 +16,7 @@
 
 .modern{
     .ledarbox > div{
-        background-image: url("../IMG/Mobil_president.png");
+        background-image: url("../IMG/Mobil_president.jpg");
         background-size: cover;
         height: 80%;
         width: 100%;
@@ -25,7 +25,7 @@
 
 .gammal{
     .ledarbox > div{
-        background-image: url("../IMG/Mobil_katt_artur.png");
+        background-image: url("../IMG/Mobil_katt_artur.jpg");
         background-size: cover;
         height: 80%;
         width: 100%;
@@ -37,11 +37,11 @@ main{
         
 
         .historia_link_background{
-            background-image: url("../IMG/Background_history_mobile.png");
+            background-image: url("../IMG/Background_history_mobile.jpg");
             background-size: cover;
             .linkbox{
                 .historia_link{
-                    background-image: url("../IMG/Cat_history_mobile.png");
+                    background-image: url("../IMG/Cat_history_mobile.jpg");
                     width: 100%;
                     height: 100%;
                     background-size: cover;
@@ -51,11 +51,11 @@ main{
             }
         }
           .territorie_link_background{
-            background-image: url("../IMG/Mobile_territorie_background.png");
+            background-image: url("../IMG/Mobile_territorie_background.jpg");
             background-size: cover;
             .linkbox{
                 .territorie_link{
-                    background-image: url("../IMG/Caste_cat_mobile.png");
+                    background-image: url("../IMG/Bohus.jpg");
                     width: 100%;
                     height: 100%;
                     background-size: cover;
@@ -64,13 +64,13 @@ main{
 }
 
           .ledare_link_background{
-            background-image: url("../IMG/ledare_backgrund_mobil.png");
+            background-image: url("../IMG/ledare_backgrund_mobil.jpg");
             background-size: cover;
             background-color: rgba($color: #000000, $alpha: 0.5);
             .linkbox{
                 
                 .ledare_link{
-                    background-image: url("../IMG/Mobil_ledare.png");
+                    background-image: url("../IMG/Mobil_ledare.jpg");
                     width: 100%;
                     height: 100%;
                     background-size: cover;
@@ -118,13 +118,13 @@ main{
 .tider{
     main{
         .historiabild{
-            background-image: url("../IMG/Lutzen_mobile.png") !important;
+            background-image: url("../IMG/Lutzen_mobile.jpg") !important;
             background-size: cover;
         }
 
         
         article > div{
-            background-image: url("../IMG/Lutzen_mobile2.png");
+            background-image: url("../IMG/Lutzen_mobile2.jpg");
             background-size: cover;
             .text_background{
                 height: 80px;
@@ -135,6 +135,7 @@ main{
                 background-color: rgba($color: #000000, $alpha: 0.9);
                 h3{
                     padding: 0;
+                    margin: 0;
                 }
 
             }
@@ -152,9 +153,35 @@ main{
     }
 }
 
+.tider{
+    main{
+        article{
+            h3{
+                margin: 0;
+            }
+        }
+    }
+}
+
+.forord{
+    h3{
+        margin: 0;
+    }
+}
+
 
 .territorie{
     main{
+        .karta{
+            background-image: url("../IMG/map_mobile.jpg");
+            background-size: cover;
+        }
+
+        .stader{
+            background-image: url("../IMG/stad2.jpg");
+            background-size: cover;
+
+        }
         article > div{
             background-image: url("../IMG/duck.jpg");
             display: flex;
@@ -180,24 +207,24 @@ main{
 
 @media screen and (min-width: 1000px) {
     .bigpic2{
-    background-image: url("../IMG/Catpoleon_banner2.png");
+    background-image: url("../IMG/Catpoleon_banner2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
 }
 
 .territorie_link{
-    background-image: url("../IMG/Bakgrund_territorie_desktop.png") !important;
+    background-image: url("../IMG/Bakgrund_territorie_desktop.jpg") !important;
     background-size: cover;
 }
 
 .historia_link{
-    background-image: url("../IMG/Cat_history_mobile.png") !important;
+    background-image: url("../IMG/Cat_history_mobile.jpg") !important;
     background-size: cover;
 }
 
 .ledare_link{
-    background-image: url("../IMG/Kattknug_desktop.png") !important;
+    background-image: url("../IMG/Kattknug_desktop.jpg") !important;
     background-size: cover;
 }
 
@@ -206,7 +233,7 @@ main{
         article{
             
                 .historiabild{
-                background-image: url("../IMG/Catopoleon2_2_historia.png") !important;
+                background-image: url("../IMG/Catopoleon2_2_historia.jpg") !important;
                 background-size: cover;
             }
             
@@ -215,12 +242,12 @@ main{
 }
 
     .karta{
-        background-image: url("../IMG/Map.png") !important;
+        background-image: url("../IMG/Map.jpg") !important;
         background-size: cover;
     }
 
     .stader{
-        background-image: url("../IMG/Karta.png") !important;
+        background-image: url("../IMG/Karta.jpg") !important;
         background-size: cover;
     }
 }

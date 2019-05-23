@@ -71,6 +71,10 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
+                margin-right: 5px;
+                div{
+                    border-style: solid;
+                }
                 
                 
                 h3{
@@ -78,9 +82,6 @@
                                 
 
                 }
-            }
-            .ledarbox:nth-child(2n){
-                margin-right: 5px;
             }
         }
         .bigpic{
@@ -144,6 +145,7 @@
         }
     }
 }
+
 .end{
     margin-bottom: 0;
 }
@@ -259,7 +261,7 @@
             .ledarbox{
                 padding: 5px;
                 margin: 0;
-                
+
                 h3{
                     margin: 0px;
                 }
