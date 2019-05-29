@@ -46,6 +46,7 @@
 
 
 .Ledare{
+    height: 100%;
     main{
         display: grid;
         width: 100%;
@@ -223,7 +224,7 @@
     }
 
        main{
-
+        height: 100%;;
            .bigpic{
                visibility: hidden;
                height: 0;
@@ -233,15 +234,20 @@
    }
 
 .Ledare{
+    height: 100vh;
     main{
+        height: 100% !important;
         display: grid;
         grid-template-columns: 60% 40%;
         grid-column-gap: 0;
         grid-row-gap: 0;
-        grid-template-rows: 45vh auto;
+        grid-template-rows: 45% 55%;
         height: auto;
         justify-content: center;
         align-items: center;
+            h2{
+                text-decoration: underline;
+            }
         
 
         article{
@@ -298,6 +304,7 @@
             display: grid;
             grid-template-rows: 60vh auto auto;
             grid-template-columns: 25% 25% 25% 25%;
+            background-color: lightgray;
             article{
                 align-items: flex-start;
                 div{

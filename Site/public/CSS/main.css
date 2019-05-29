@@ -131,37 +131,39 @@ header {
   width: 88%;
   height: 92%; }
 
-.Ledare main {
-  display: grid;
-  width: 100%;
-  grid-template-rows: 40vh auto;
-  padding-top: 20px; }
-  .Ledare main article {
-    display: flex;
+.Ledare {
+  height: 100%; }
+  .Ledare main {
+    display: grid;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center; }
-    .Ledare main article h2 {
-      width: 100%;
-      margin-top: 15px; }
-    .Ledare main article .ledarbox {
-      height: 180px;
-      width: 145px;
-      margin: 15px 0 20px 0;
+    grid-template-rows: 40vh auto;
+    padding-top: 20px; }
+    .Ledare main article {
       display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin-right: 5px; }
-      .Ledare main article .ledarbox div {
-        border-style: solid; }
-      .Ledare main article .ledarbox h3 {
-        margin: 0; }
-  .Ledare main .bigpic {
-    height: 100%;
-    width: 80vw;
-    border-style: solid;
-    justify-self: center; }
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center; }
+      .Ledare main article h2 {
+        width: 100%;
+        margin-top: 15px; }
+      .Ledare main article .ledarbox {
+        height: 180px;
+        width: 145px;
+        margin: 15px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 5px; }
+        .Ledare main article .ledarbox div {
+          border-style: solid; }
+        .Ledare main article .ledarbox h3 {
+          margin: 0; }
+    .Ledare main .bigpic {
+      height: 100%;
+      width: 80vw;
+      border-style: solid;
+      justify-self: center; }
 
 .tider {
   width: 100%; }
@@ -243,51 +245,59 @@ header {
       font-size: 2rem;
       align-items: center;
       justify-content: center; }
-    .navigator main .bigpic {
-      visibility: hidden;
-      height: 0; }
+    .navigator main {
+      height: 100%; }
+      .navigator main .bigpic {
+        visibility: hidden;
+        height: 0; }
 
-  .Ledare main {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    grid-template-rows: 45vh auto;
-    height: auto;
-    justify-content: center;
-    align-items: center; }
-    .Ledare main article {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-content: flex-start;
-      text-align: left !important;
-      margin: 5px;
-      margin-left: 35px; }
-      .Ledare main article h2 {
-        margin: 0; }
-      .Ledare main article .ledarbox {
-        padding: 5px;
-        margin: 0; }
-        .Ledare main article .ledarbox h3 {
-          margin: 0px; }
-      .Ledare main article .ledarbox:nth-child(2n) {
-        margin-left: 0px; }
-    .Ledare main article:nth-child(2n) {
-      grid-row: span 2;
-      margin-right: 60px;
-      width: 70%; }
-    .Ledare main .bigpic {
-      justify-self: flex-start;
-      margin-left: 40px;
-      width: 600px !important;
-      height: 240px !important; }
+  .Ledare {
+    height: 100vh; }
+    .Ledare main {
+      height: 100% !important;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      grid-template-rows: 45% 55%;
+      height: auto;
+      justify-content: center;
+      align-items: center; }
+      .Ledare main h2 {
+        text-decoration: underline; }
+      .Ledare main article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        text-align: left !important;
+        margin: 5px;
+        margin-left: 35px; }
+        .Ledare main article h2 {
+          margin: 0; }
+        .Ledare main article .ledarbox {
+          padding: 5px;
+          margin: 0; }
+          .Ledare main article .ledarbox h3 {
+            margin: 0px; }
+        .Ledare main article .ledarbox:nth-child(2n) {
+          margin-left: 0px; }
+      .Ledare main article:nth-child(2n) {
+        grid-row: span 2;
+        margin-right: 60px;
+        width: 70%; }
+      .Ledare main .bigpic {
+        justify-self: flex-start;
+        margin-left: 40px;
+        width: 600px !important;
+        height: 240px !important; }
 
   .tider main {
     height: auto;
     display: grid;
     grid-template-rows: 60vh auto auto;
-    grid-template-columns: 25% 25% 25% 25%; }
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: lightgray; }
     .tider main article {
       align-items: flex-start; }
       .tider main article div {
@@ -467,7 +477,7 @@ main article .ledare_link_background {
     padding-top: 50px;
     color: azure; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1224px) {
   .bigpic2 {
     background-image: url("../IMG/Catpoleon_banner2.jpg");
     background-size: cover;
